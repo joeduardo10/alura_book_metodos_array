@@ -5,5 +5,5 @@ function filtrarLivros(){
     const elementoBtn = document.getElementById(this.id)
     const cat = elementoBtn.value;
     let livrosFiltrados = livros.filter(livro => livro.categoria == cat)
-    console.table(livrosFiltrados)
+    exibirOsLivrosNaTela(livrosFiltrados)
 }
